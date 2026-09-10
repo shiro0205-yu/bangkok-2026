@@ -55,6 +55,7 @@ a{color:#17645f;font-weight:650}.mini{font-size:13px;color:#60706f}
   <div class="card">
     <h2>สวัสดี Bangkok 👋</h2>
     <p>每日行程只放已经决定好的项目。地点名称可以点击，查看地址、说明和导航。</p>
+<div class="info">⏰ 除航班、预约和营业时间外，行程不要求早起；表内时间尽量使用“中午 / 下午 / 傍晚”等弹性时间。</div>
     <button class="btn" onclick="go(1)">开始旅行准备 →</button>
     <button class="btn alt" onclick="go(2)">直接看 Day 1</button>
     <button class="btn alt" onclick="go(11)">自由项目 / 想去再去</button>
@@ -96,20 +97,22 @@ a{color:#17645f;font-weight:650}.mini{font-size:13px;color:#60706f}
 
 <section class="page" id="p3">
 <div class="dayhead"><b>Day 2 · 9/19 Sat</b><h1>第一次曼谷 · 寺庙经典线 🛕</h1></div>
+<div class="card"><div class="info">🌿 今天不用早起。时间为参考范围，以景点营业时间为边界，睡醒、吃好早餐再出发。</div></div>
 <div class="card">
-<div class="row clickable" onclick="showDetail('palace')"><span class="time">09:30</span><span class="item">Grand Palace 大皇宫</span><span class="chev">›</span></div>
-<div class="row clickable" onclick="showDetail('watpho')"><span class="time">11:45</span><span class="item">Wat Pho 卧佛寺</span><span class="chev">›</span></div>
-<div class="row"><span class="time">13:00</span><span class="item">午餐 / 咖啡休息</span></div>
-<div class="row clickable" onclick="showDetail('watarun')"><span class="time">15:00</span><span class="item">Wat Arun 郑王庙</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('palace')"><span class="time">10:30+</span><span class="item">Grand Palace 大皇宫</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('watpho')"><span class="time">12:30+</span><span class="item">Wat Pho 卧佛寺</span><span class="chev">›</span></div>
+<div class="row"><span class="time">之后</span><span class="item">午餐 / 咖啡休息</span></div>
+<div class="row clickable" onclick="showDetail('watarun')"><span class="time">15:30+</span><span class="item">Wat Arun 郑王庙</span><span class="chev">›</span></div>
 <div class="row"><span class="time">晚上</span><span class="item">返回酒店附近，早点休息</span></div>
 </div></section>
 
 <section class="page" id="p4">
 <div class="dayhead"><b>Day 3 · 9/20 Sun</b><h1>周末市场 + 泰丝老宅 + 美食 🛍️</h1></div>
+<div class="card"><div class="info">🌿 慢节奏日。除营业时间外不设硬性出发时间，前后项目可按当天状态调整。</div></div>
 <div class="card">
-<div class="row clickable" onclick="showDetail('chatuchak')"><span class="time">10:00</span><span class="item">Chatuchak Weekend Market</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('chatuchak')"><span class="time">11:00+</span><span class="item">Chatuchak Weekend Market</span><span class="chev">›</span></div>
 <div class="row"><span class="time">13:00</span><span class="item">午餐 / Cafe</span></div>
-<div class="row clickable" onclick="showDetail('jim')"><span class="time">15:00</span><span class="item">Jim Thompson House</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('jim')"><span class="time">下午</span><span class="item">Jim Thompson House</span><span class="chev">›</span></div>
 <div class="row clickable" onclick="showDetail('banthat')"><span class="time">17:30</span><span class="item">Banthat Thong 美食街</span><span class="chev">›</span></div>
 <div class="row clickable" onclick="showDetail('panee')"><span class="time">晚餐</span><span class="item">Pa Nee Kung Chae Nam Pla</span><span class="chev">›</span></div>
 <div class="row clickable" onclick="showDetail('hereduan')"><span class="time">备选</span><span class="item">Here Duan</span><span class="chev">›</span></div>
@@ -118,9 +121,9 @@ a{color:#17645f;font-weight:650}.mini{font-size:13px;color:#60706f}
 <section class="page" id="p5">
 <div class="dayhead"><b>Day 4 · 9/21 Mon</b><h1>老城散步 + Chinatown 🏮</h1></div>
 <div class="card">
-<div class="row clickable" onclick="showDetail('talatnoi')"><span class="time">11:30</span><span class="item">Talat Noi / Charoen Krung</span><span class="chev">›</span></div>
-<div class="row clickable" onclick="showDetail('rivercity')"><span class="time">14:00</span><span class="item">River City Bangkok</span><span class="chev">›</span></div>
-<div class="row clickable" onclick="showDetail('chinatown')"><span class="time">17:00</span><span class="item">Yaowarat Chinatown</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('talatnoi')"><span class="time">中午+</span><span class="item">Talat Noi / Charoen Krung</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('rivercity')"><span class="time">下午</span><span class="item">River City Bangkok</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('chinatown')"><span class="time">傍晚</span><span class="item">Yaowarat Chinatown</span><span class="chev">›</span></div>
 <div class="row"><span class="time">20:00</span><span class="item">回酒店休息</span></div>
 </div></section>
 
@@ -135,18 +138,20 @@ a{color:#17645f;font-weight:650}.mini{font-size:13px;color:#60706f}
 
 <section class="page" id="p7">
 <div class="dayhead"><b>Day 6 · 9/23 Wed</b><h1>Lead Climbing Day 🧗‍♀️</h1></div>
+<div class="card"><div class="info">🧗‍♀️ 攀岩是今天的主项目，不取消。预约时间确定后以预约时间为准；未预约前不用为了行程表早起。</div></div>
 <div class="card">
-<div class="row clickable" onclick="showDetail('rockdomain')"><span class="time">10:30</span><span class="item">Rock Domain · Lead Climbing</span><span class="chev">›</span></div>
-<div class="row"><span class="time">13:30</span><span class="item">午餐 / 洗澡 / 补水</span></div>
-<div class="row clickable" onclick="showDetail('massage')"><span class="time">16:00+</span><span class="item">放松型精油按摩 60–90 min</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('rockdomain')"><span class="time">11:30+</span><span class="item">Rock Domain · Lead Climbing</span><span class="chev">›</span></div>
+<div class="row"><span class="time">之后</span><span class="item">午餐 / 洗澡 / 补水</span></div>
+<div class="row clickable" onclick="showDetail('massage')"><span class="time">傍晚</span><span class="item">放松型精油按摩 60–90 min</span><span class="chev">›</span></div>
 <div class="row"><span class="time">晚上</span><span class="item">清淡晚餐；前臂、肩膀避免重手深层按摩</span></div>
 </div></section>
 
 <section class="page" id="p8">
 <div class="dayhead"><b>Day 7 · 9/24 Thu</b><h1>Shooting Day 🎯</h1></div>
+<div class="card"><div class="info">🎯 射击是今天的主项目，不取消，并与攀岩分开一天。预约后以场馆确认时间为准。</div></div>
 <div class="card">
-<div class="row clickable" onclick="showDetail('shooting')"><span class="time">10:00</span><span class="item">Bangkok Shooting Range · 实弹体验</span><span class="chev">›</span></div>
-<div class="row"><span class="time">12:00</span><span class="item">午餐</span></div>
+<div class="row clickable" onclick="showDetail('shooting')"><span class="time">11:30+</span><span class="item">Bangkok Shooting Range · 实弹体验</span><span class="chev">›</span></div>
+<div class="row"><span class="time">之后</span><span class="item">午餐</span></div>
 <div class="row clickable" onclick="showDetail('massage')"><span class="time">下午</span><span class="item">SPA / 按摩 60–90 min</span><span class="chev">›</span></div>
 <div class="row clickable" onclick="showDetail('siam')"><span class="time">之后</span><span class="item">Siam / CentralWorld Shopping</span><span class="chev">›</span></div>
 <div class="row"><span class="time">晚上</span><span class="item">曼谷最后一顿正式晚餐</span></div>
@@ -178,15 +183,27 @@ a{color:#17645f;font-weight:650}.mini{font-size:13px;color:#60706f}
 <div class="sectiontitle">体验类</div>
 <div class="card"><div class="grid">
   <div class="freecard" onclick="showDetail('watchara')"><div class="emoji">🥊</div><b>泰拳体验</b><small>初学者也可以，建议提前确认英语课</small></div>
-  <div class="freecard" onclick="showDetail('cooking')"><div class="emoji">🍳</div><b>泰餐料理课</b><small>适合安排半天，不赶行程</small></div>
   <div class="freecard" onclick="showDetail('thaiphoto')"><div class="emoji">👗</div><b>泰服写真</b><small>适合寺庙附近或工作室预约</small></div>
   <div class="freecard" onclick="showDetail('muaymatch')"><div class="emoji">🥊</div><b>看职业泰拳</b><small>晚上有空再安排</small></div>
+</div></div>
+<div class="sectiontitle">附近公园 · 有空再去</div>
+<div class="card"><div class="grid">
+  <div class="freecard" onclick="showDetail('lumpini')"><div class="emoji">🌳</div><b>Lumphini Park</b><small>经典城市公园，适合傍晚散步</small></div>
+  <div class="freecard" onclick="showDetail('benjakitti')"><div class="emoji">🌿</div><b>Benjakitti Forest Park</b><small>森林步道 + 城市天际线，很适合拍照</small></div>
+  <div class="freecard" onclick="showDetail('chongnonsi')"><div class="emoji">🌉</div><b>Chong Nonsi Canal Park</b><small>Sathon 一带，晚上顺路走走</small></div>
+  <div class="freecard" onclick="showDetail('chulapark')"><div class="emoji">🌱</div><b>CU Centenary Park</b><small>Banthat Thong 吃饭前后可顺路</small></div>
+</div></div>
+<div class="sectiontitle">商场 · 下雨 / 太热时最好用</div>
+<div class="card"><div class="grid">
+  <div class="freecard" onclick="showDetail('onebangkok')"><div class="emoji">✨</div><b>One Bangkok</b><small>新商场 + 公园，和 Lumphini 很好串</small></div>
+  <div class="freecard" onclick="showDetail('iconsiam')"><div class="emoji">🛍️</div><b>ICONSIAM</b><small>河景、购物、美食一次解决</small></div>
+  <div class="freecard" onclick="showDetail('centralworld')"><div class="emoji">🏬</div><b>CentralWorld</b><small>Siam 购物线，品牌和餐厅都多</small></div>
+  <div class="freecard" onclick="showDetail('mbk')"><div class="emoji">🛒</div><b>MBK Center</b><small>伴手礼、小商品、手机配件都方便</small></div>
 </div></div>
 <div class="sectiontitle">放松 / 户外</div>
 <div class="card"><div class="grid">
   <div class="freecard" onclick="showDetail('massage')"><div class="emoji">💆‍♀️</div><b>SPA / 按摩</b><small>60–120 分钟，随当天体力安排</small></div>
   <div class="freecard" onclick="showDetail('bangkachao')"><div class="emoji">🚲</div><b>Bang Krachao</b><small>天气好再去，骑行半日</small></div>
-  <div class="freecard" onclick="showDetail('iconsiam')"><div class="emoji">🛍️</div><b>ICONSIAM</b><small>购物、吃饭、吹空调</small></div>
   <div class="freecard" onclick="showDetail('rivercruise')"><div class="emoji">🌆</div><b>湄南河夜景</b><small>只想轻松看夜景时很好用</small></div>
 </div></div>
 </section>
@@ -225,11 +242,17 @@ siam:{title:"Siam / CentralWorld",tags:["购物","室内"],desc:"射击后按体
 amari:{title:"Amari Don Muang Airport Bangkok",tags:["机场酒店","Day 8–9"],desc:"与 DMK Terminal 1 有空调连廊相连，第二天早班机很省心。建议 9/25 入住。",address:"333 Moo 10 Chert Wudthakas Road, Si Kan, Don Muang, Bangkok 10210, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Amari+Don+Muang+Airport+Bangkok"},
 watchara:{title:"Watchara Muay Thai Gym",tags:["自由项目","泰拳"],desc:"想体验泰拳时再去。建议先联系确认初学者课程、英语沟通与预约方式。",address:"9 Sukhumvit 1 Alley, Khlong Toei Nuea, Watthana, Bangkok 10110, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Watchara+Muay+Thai+Gym+Bangkok"},
 massage:{title:"SPA / 泰式按摩",tags:["自由项目","放松"],desc:"不固定店、不固定日期。普通日可做 60–120 分钟；攀岩后优先轻柔精油或放松型，避免前臂和肩膀重手深层按压。",address:"按当天所在区域选择正规、高评分门店即可",maps:"https://www.google.com/maps/search/?api=1&query=Thai+massage+Bangkok"},
-cooking:{title:"泰餐料理课",tags:["自由项目","半日"],desc:"适合想慢下来的一天，通常包含市场或备料 + 烹饪。建议挑交通方便、英语授课的课程。",address:"建议按住宿区域选择课程",maps:"https://www.google.com/maps/search/?api=1&query=Thai+cooking+class+Bangkok"},
 thaiphoto:{title:"传统泰服写真",tags:["自由项目","拍照"],desc:"可选寺庙附近租泰服，或预约专业工作室。需要拍摄的话建议提早预约。",address:"建议按拍摄地点选择门店",maps:"https://www.google.com/maps/search/?api=1&query=Thai+costume+rental+Bangkok"},
 muaymatch:{title:"职业泰拳比赛",tags:["自由项目","夜间"],desc:"有兴趣再安排，不塞进固定行程。出发前按比赛日查询正规场馆赛程。",address:"Bangkok, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Muay+Thai+stadium+Bangkok"},
 bangkachao:{title:"Bang Krachao 骑行",tags:["自由项目","户外"],desc:"天气好、体力充足再去。适合半日骑行；如果下雨或很闷热就直接放弃。",address:"Bang Krachao, Phra Pradaeng District, Samut Prakan, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Bang+Krachao"},
 iconsiam:{title:"ICONSIAM",tags:["自由项目","购物"],desc:"非常适合临时空档：吃饭、购物、避暑、看河景。",address:"299 Charoen Nakhon Rd, Khlong Ton Sai, Khlong San, Bangkok 10600, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=ICONSIAM+Bangkok"},
+lumpini:{title:"Lumphini Park 伦披尼公园",tags:["自由项目","公园"],desc:"曼谷最经典的城市公园之一。离 Sathon 不远，适合傍晚散步、看湖景和放空；不用专门早起。",address:"Lumphini, Pathum Wan, Bangkok 10330, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Lumphini+Park+Bangkok"},
+benjakitti:{title:"Benjakitti Park & Forest Park",tags:["自由项目","公园","拍照"],desc:"湖景、森林湿地、高架步道和曼谷天际线都很漂亮。建议傍晚去，和 Lumphini / One Bangkok 可以串成一条轻松路线。",address:"Ratchadaphisek Rd, Khlong Toei, Bangkok 10110, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Benjakitti+Forest+Park+Bangkok"},
+chongnonsi:{title:"Chong Nonsi Canal Park",tags:["自由项目","Sathon","夜间"],desc:"位于 Sathon 一带的运河景观步道，适合晚上顺路散步，不值得专门占半天。",address:"Naradhiwas Rajanagarindra Rd, Sathon, Bangkok 10120, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Chong+Nonsi+Canal+Park+Bangkok"},
+chulapark:{title:"Chulalongkorn University Centenary Park",tags:["自由项目","公园","美食顺路"],desc:"现代城市公园，离 Banthat Thong 美食区很适合组合。Day 3 如果吃饭前还有时间，可以临时过去走走。",address:"254 Phaya Thai Rd, Wang Mai, Pathum Wan, Bangkok 10330, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Chulalongkorn+University+Centenary+Park"},
+onebangkok:{title:"One Bangkok",tags:["自由项目","商场","公园"],desc:"很适合你们这种不想赶行程的玩法：商场、餐厅、咖啡和户外绿地集中在一起，下雨或太热也好调整。还能和 Lumphini、Benjakitti 一带组合。",address:"Witthayu Rd, Lumphini, Pathum Wan, Bangkok 10330, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=One+Bangkok",website:"https://www.onebangkok.com/en/"},
+centralworld:{title:"CentralWorld",tags:["自由项目","商场","Siam"],desc:"大型综合商场，品牌、餐厅和咖啡选择很多。最适合放在 Siam 购物那天，累了随时进去休息。",address:"999/9 Rama I Rd, Pathum Wan, Bangkok 10330, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=CentralWorld+Bangkok"},
+mbk:{title:"MBK Center",tags:["自由项目","商场","伴手礼"],desc:"比高端商场更接地气，适合买伴手礼、小商品、电子配件。和 Jim Thompson House、Siam 区域都比较好组合。",address:"444 Phaya Thai Rd, Wang Mai, Pathum Wan, Bangkok 10330, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=MBK+Center+Bangkok"},
 rivercruise:{title:"湄南河夜景",tags:["自由项目","夜景"],desc:"不一定要坐正式晚宴船。临时想看夜景时，搭船、河边餐厅或 ICONSIAM 都可以。",address:"Chao Phraya River, Bangkok, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Chao+Phraya+River+Bangkok"}
 };
 
