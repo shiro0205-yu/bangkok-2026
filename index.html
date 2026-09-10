@@ -1,79 +1,276 @@
-<!doctype html><html lang="zh-CN"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#153f3d"><title>Bangkok Girls Trip 2026</title>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#153f3d">
+<title>Bangkok Girls Trip 2026</title>
 <style>
-:root{--ink:#173737;--green:#174c49;--gold:#c79b54;--cream:#fbf6eb;--coral:#db7c69}
-*{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",sans-serif;background:var(--cream);color:var(--ink)}
-main{max-width:520px;margin:auto;min-height:100vh;padding-bottom:90px} .page{display:none}.page.active{display:block}
+:root{--ink:#173737;--green:#174c49;--gold:#c79b54;--cream:#fbf6eb;--coral:#db7c69;--line:#ebe7de}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",sans-serif;background:var(--cream);color:var(--ink)}
+main{max-width:520px;margin:auto;min-height:100vh;padding-bottom:96px}
+.page{display:none}.page.active{display:block}
 .hero{padding:58px 24px 30px;background:linear-gradient(145deg,#123b3a,#28736b);color:white;border-radius:0 0 34px 34px}
 .hero small{letter-spacing:2px;color:#efd6a6}.hero h1{font-size:42px;line-height:.98;margin:12px 0}.hero p{opacity:.9}
 .card{background:white;margin:16px;border-radius:22px;padding:18px;box-shadow:0 8px 28px #17373712}
 .pill{display:inline-block;background:#f2e6cf;color:#795b2d;border-radius:999px;padding:6px 10px;font-size:12px;margin:3px}
-.btn{display:block;width:100%;border:0;border-radius:16px;padding:15px;margin-top:12px;background:var(--green);color:white;font-weight:700;font-size:16px;text-align:center}
-.btn.alt{background:#efe5d2;color:var(--ink)} h2{margin:4px 0 12px}
-.row{display:flex;gap:8px;padding:13px 0;border-bottom:1px solid #eee;line-height:1.45}.row:last-child{border-bottom:0}
-.time{font-weight:700;color:var(--coral);flex:0 0 72px} .dayhead{padding:34px 20px 4px}.dayhead b{color:var(--coral)}.dayhead h1{margin:7px 0}
+.btn{display:block;width:100%;border:0;border-radius:16px;padding:15px;margin-top:12px;background:var(--green);color:white;font-weight:700;font-size:16px;text-align:center;text-decoration:none}
+.btn.alt{background:#efe5d2;color:var(--ink)}
+h2{margin:4px 0 12px}
+.row{display:flex;gap:8px;padding:13px 0;border-bottom:1px solid var(--line);line-height:1.45}
+.row:last-child{border-bottom:0}.row.clickable{cursor:pointer}.row.clickable:active{opacity:.6}
+.time{font-weight:700;color:var(--coral);flex:0 0 72px}
+.item{flex:1}.chev{color:#9ba9a7;font-weight:700}
+.dayhead{padding:34px 20px 4px}.dayhead b{color:var(--coral)}.dayhead h1{margin:7px 0}
 .check{display:flex;gap:10px;padding:11px 0;border-bottom:1px solid #eee;align-items:flex-start}.check input{width:20px;height:20px;flex:none}
 .progress{height:7px;background:#eee;border-radius:9px;overflow:hidden;margin:16px 0 8px}.progress i{display:block;height:100%;background:var(--gold);width:0}
 .info{font-size:13px;background:#fff5e5;border-radius:14px;padding:12px;line-height:1.55;margin-top:12px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.freecard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px;min-height:126px;box-shadow:0 5px 18px #1737370d;cursor:pointer}
+.freecard:active{transform:scale(.99);opacity:.75}.freecard .emoji{font-size:28px}.freecard b{display:block;margin:8px 0 4px}.freecard small{color:#72817f;line-height:1.4}
 .bottom{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(10px);border-top:1px solid #ddd;padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;gap:8px;justify-content:center}
 .bottom button{max-width:245px;flex:1;padding:13px;border:0;border-radius:14px;font-weight:700;font-size:14px}.prev{background:#eee;color:var(--ink)}.next{background:var(--green);color:#fff}
-a{color:#17645f;font-weight:650} .mini{font-size:13px;color:#60706f}
-</style></head><body><main>
-<section class="page active" id="p0"><div class="hero"><small>GIRLS TRIP · BANGKOK</small><h1>Bangkok<br>2026</h1><p>SEP 18 — 26 · 4人旅行</p>
-<span class="pill">经典景点</span><span class="pill">美食</span><span class="pill">银饰</span><span class="pill">攀岩</span><span class="pill">射击</span><span class="pill">SPA</span></div>
-<div class="card"><h2>สวัสดี Bangkok 👋</h2><p>前半段第一次曼谷经典路线，后半段体验、运动、按摩和自由活动。旅行当天跟着“下一项”走就好。</p>
-<button class="btn" onclick="go(1)">开始旅行准备 →</button><button class="btn alt" onclick="go(2)">直接看 Day 1</button></div>
-<div class="card"><b>✈️ 去程</b><div class="row"><span class="time">9/18</span><span>ZIPAIR ZG51<br>NRT 17:00 → BKK 21:40</span></div>
-<b>✈️ 回程</b><div class="row"><span class="time">9/26</span><span>Thai AirAsia X XJ606<br>DMK 11:15 → NRT 19:45</span></div></div></section>
-<section class="page" id="p1"><div class="dayhead"><b>BEFORE WE GO</b><h1>☑️ 出发 Checklist</h1></div><div class="card" id="checks">
-<label class="check"><input type="checkbox">护照有效期确认</label>
-<label class="check"><input type="checkbox">9/16–17 完成 Thailand Digital Arrival Card</label>
-<label class="check"><input type="checkbox">保存 ZG51 / XJ606 机票与改签邮件</label>
-<label class="check"><input type="checkbox">确认 Chatrium Sathon 住宿订单</label>
-<label class="check"><input type="checkbox">预订 9/25 DMK 机场酒店</label>
-<label class="check"><input type="checkbox">预约 9/22 OriginAg 银饰 Workshop</label>
-<label class="check"><input type="checkbox">预约 9/23 Rock Domain Lead Climbing / belay / gear</label>
-<label class="check"><input type="checkbox">预约 9/24 Bangkok Shooting Range</label>
-<label class="check"><input type="checkbox">准备 eSIM / SIM、Grab、银行卡与现金</label>
-<label class="check"><input type="checkbox">寺庙服装、防晒、雨具、运动服、充电宝</label>
-<div class="progress"><i id="bar"></i></div><small id="pct">0% completed</small>
-<div class="info">TDAC：<a href="https://tdac.immigration.go.th/" target="_blank">官方填写页面 ↗</a><br>建议出发前再次确认泰国入境政策。</div></div></section>
+a{color:#17645f;font-weight:650}.mini{font-size:13px;color:#60706f}
+.modal{position:fixed;inset:0;background:#17373788;display:none;align-items:flex-end;z-index:20}
+.modal.show{display:flex}.sheet{width:100%;max-height:86vh;overflow:auto;background:var(--cream);border-radius:28px 28px 0 0;padding:12px 16px calc(24px + env(safe-area-inset-bottom))}
+.handle{width:42px;height:5px;background:#c9cfcc;border-radius:8px;margin:3px auto 14px}
+.sheet h2{margin:3px 0 4px}.tag{display:inline-block;background:#efe5d2;border-radius:999px;padding:5px 9px;font-size:12px;margin:4px 4px 4px 0}
+.detailbox{background:white;border-radius:18px;padding:15px;margin-top:12px;line-height:1.6}
+.detailbox b{display:block;margin-bottom:4px}.close{border:0;background:#e8ecea;border-radius:14px;padding:12px 14px;font-weight:700;width:100%;margin-top:12px}
+.actionrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.actionrow a{display:block;text-align:center;text-decoration:none;padding:12px;border-radius:14px;background:var(--green);color:#fff}.actionrow a.secondary{background:#efe5d2;color:var(--ink)}
+.notice{font-size:12px;color:#72817f;margin-top:8px;line-height:1.5}
+.sectiontitle{margin:18px 16px 8px;font-size:14px;color:#6b7978;font-weight:700;letter-spacing:.03em}
+</style>
+</head>
+<body>
+<main>
+<section class="page active" id="p0">
+  <div class="hero">
+    <small>GIRLS TRIP · BANGKOK</small>
+    <h1>Bangkok<br>2026</h1>
+    <p>SEP 18 — 26 · 4人旅行</p>
+    <span class="pill">经典景点</span><span class="pill">美食</span><span class="pill">银饰</span><span class="pill">攀岩</span><span class="pill">射击</span><span class="pill">SPA</span>
+  </div>
+  <div class="card">
+    <h2>สวัสดี Bangkok 👋</h2>
+    <p>每日行程只放已经决定好的项目。地点名称可以点击，查看地址、说明和导航。</p>
+    <button class="btn" onclick="go(1)">开始旅行准备 →</button>
+    <button class="btn alt" onclick="go(2)">直接看 Day 1</button>
+    <button class="btn alt" onclick="go(11)">自由项目 / 想去再去</button>
+  </div>
+  <div class="card">
+    <b>✈️ 去程</b>
+    <div class="row"><span class="time">9/18</span><span>ZIPAIR ZG51<br>NRT 17:00 → BKK 21:40</span></div>
+    <b>✈️ 回程</b>
+    <div class="row"><span class="time">9/26</span><span>Thai AirAsia X XJ606<br>DMK 11:15 → NRT 19:45</span></div>
+  </div>
+</section>
+
+<section class="page" id="p1">
+  <div class="dayhead"><b>BEFORE WE GO</b><h1>☑️ 出发 Checklist</h1></div>
+  <div class="card" id="checks">
+    <label class="check"><input type="checkbox">护照有效期确认</label>
+    <label class="check"><input type="checkbox">9/16–17 完成 Thailand Digital Arrival Card</label>
+    <label class="check"><input type="checkbox">保存 ZG51 / XJ606 机票与改签邮件</label>
+    <label class="check"><input type="checkbox">确认 Chatrium Sathon 住宿订单</label>
+    <label class="check"><input type="checkbox">预订 9/25 DMK 机场酒店</label>
+    <label class="check"><input type="checkbox">预约 9/22 OriginAg 银饰 Workshop</label>
+    <label class="check"><input type="checkbox">预约 9/23 Rock Domain Lead Climbing / belay / gear</label>
+    <label class="check"><input type="checkbox">预约 9/24 Bangkok Shooting Range</label>
+    <label class="check"><input type="checkbox">准备 eSIM / SIM、Grab、银行卡与现金</label>
+    <label class="check"><input type="checkbox">寺庙服装、防晒、雨具、运动服、充电宝</label>
+    <div class="progress"><i id="bar"></i></div><small id="pct">0% completed</small>
+    <div class="info">TDAC：<a href="https://tdac.immigration.go.th/" target="_blank">官方填写页面 ↗</a><br>建议出发前再次确认泰国入境政策。</div>
+  </div>
+</section>
+
 <section class="page" id="p2">
-      <div class="dayhead"><b>Day 1 · 9/18 Fri</b><h1>抵达曼谷 ✈️</h1></div>
-      <div class="card"><div class="row"><span class="time">17:00</span><span>ZIPAIR ZG51 从成田 NRT 出发</span></div><div class="row"><span class="time">21:40</span><span>抵达 Bangkok BKK</span></div><div class="row"><span class="time">22:30+</span><span>入境、取行李 → Grab 前往 Chatrium Sathon</span></div><div class="row"><span class="time">深夜</span><span>入住、洗澡、休息。今天不排活动。</span></div></div>
-    </section><section class="page" id="p3">
-      <div class="dayhead"><b>Day 2 · 9/19 Sat</b><h1>第一次曼谷 · 寺庙经典线 🛕</h1></div>
-      <div class="card"><div class="row"><span class="time">09:30</span><span>Grand Palace 大皇宫</span></div><div class="row"><span class="time">11:45</span><span>Wat Pho 卧佛寺</span></div><div class="row"><span class="time">13:00</span><span>午餐 / 咖啡休息</span></div><div class="row"><span class="time">15:00</span><span>Wat Arun 郑王庙</span></div><div class="row"><span class="time">17:00</span><span>湄南河 / ICONSIAM（看体力）</span></div><div class="row"><span class="time">晚上</span><span>足部或精油按摩 60 min</span></div></div>
-    </section><section class="page" id="p4">
-      <div class="dayhead"><b>Day 3 · 9/20 Sun</b><h1>周末市场 + 泰丝老宅 + 美食 🛍️</h1></div>
-      <div class="card"><div class="row"><span class="time">10:00</span><span>Chatuchak Weekend Market</span></div><div class="row"><span class="time">13:00</span><span>午餐 / Cafe</span></div><div class="row"><span class="time">15:00</span><span>Jim Thompson House</span></div><div class="row"><span class="time">17:30</span><span>Banthat Thong 美食街</span></div><div class="row"><span class="time">晚餐</span><span>Pa Nee Kung Chae Nam Pla / Here Duan</span></div><div class="row"><span class="time">晚上</span><span>可选足部按摩</span></div></div>
-    </section><section class="page" id="p5">
-      <div class="dayhead"><b>Day 4 · 9/21 Mon</b><h1>老城散步 + Chinatown 🏮</h1></div>
-      <div class="card"><div class="row"><span class="time">11:30</span><span>Talat Noi / Charoen Krung</span></div><div class="row"><span class="time">14:00</span><span>River City Bangkok</span></div><div class="row"><span class="time">17:00</span><span>Yaowarat Chinatown</span></div><div class="row"><span class="time">20:00</span><span>按摩 / SPA 60–90 min</span></div></div>
-    </section><section class="page" id="p6">
-      <div class="dayhead"><b>Day 5 · 9/22 Tue</b><h1>银饰手作 + 自由日 💍</h1></div>
-      <div class="card"><div class="row"><span class="time">10:30</span><span>OriginAg Jewelry x Workshop · 925 银饰</span></div><div class="row"><span class="time">12:00</span><span>四人一起午餐</span></div><div class="row"><span class="time">下午</span><span>自由活动：SPA / Cafe / Shopping / 拍照</span></div><div class="row"><span class="time">晚上</span><span>轻松晚餐，早点休息</span></div></div>
-    </section><section class="page" id="p7">
-      <div class="dayhead"><b>Day 6 · 9/23 Wed</b><h1>Lead Climbing Day 🧗‍♀️</h1></div>
-      <div class="card"><div class="row"><span class="time">10:30</span><span>Rock Domain · Lead Climbing</span></div><div class="row"><span class="time">13:30</span><span>午餐 / 洗澡 / 补水</span></div><div class="row"><span class="time">16:00+</span><span>放松型精油按摩 60–90 min</span></div><div class="row"><span class="time">晚上</span><span>清淡晚餐；前臂肩膀避免重手深层按摩</span></div></div>
-    </section><section class="page" id="p8">
-      <div class="dayhead"><b>Day 7 · 9/24 Thu</b><h1>Shooting Day 🎯</h1></div>
-      <div class="card"><div class="row"><span class="time">10:00</span><span>Bangkok Shooting Range · 实弹体验</span></div><div class="row"><span class="time">12:00</span><span>午餐</span></div><div class="row"><span class="time">下午</span><span>SPA / 按摩 60–90 min</span></div><div class="row"><span class="time">之后</span><span>Siam / CentralWorld / ICONSIAM Shopping</span></div><div class="row"><span class="time">晚上</span><span>曼谷最后一顿正式晚餐</span></div></div>
-    </section><section class="page" id="p9">
-      <div class="dayhead"><b>Day 8 · 9/25 Fri</b><h1>机场酒店 · 收尾日 🧳</h1></div>
-      <div class="card"><div class="row"><span class="time">上午</span><span>早餐 / 最后购物</span></div><div class="row"><span class="time">12:00</span><span>Chatrium Sathon Checkout</span></div><div class="row"><span class="time">13:00</span><span>Grab 前往 DMK 区域</span></div><div class="row"><span class="time">15:00</span><span>建议入住 Amari Don Muang Airport Bangkok</span></div><div class="row"><span class="time">下午</span><span>休息 / 可选最后一次 SPA 90–120 min</span></div><div class="row"><span class="time">22:30</span><span>睡觉，为回程留体力</span></div></div>
-    </section><section class="page" id="p10">
-      <div class="dayhead"><b>Day 9 · 9/26 Sat</b><h1>回东京 ✈️</h1></div>
-      <div class="card"><div class="row"><span class="time">07:00</span><span>起床</span></div><div class="row"><span class="time">07:45</span><span>Checkout</span></div><div class="row"><span class="time">08:00</span><span>经连廊前往 DMK，办理值机</span></div><div class="row"><span class="time">11:15</span><span>Thai AirAsia X XJ606 起飞</span></div><div class="row"><span class="time">19:45</span><span>抵达 Tokyo NRT</span></div></div>
-    </section>
-</main><div class="bottom"><button class="prev" onclick="step(-1)">← 上一个</button><button class="next" onclick="step(1)">下一个 →</button></div>
+<div class="dayhead"><b>Day 1 · 9/18 Fri</b><h1>抵达曼谷 ✈️</h1></div>
+<div class="card">
+<div class="row"><span class="time">17:00</span><span class="item">ZIPAIR ZG51 从成田 NRT 出发</span></div>
+<div class="row"><span class="time">21:40</span><span class="item">抵达 Bangkok BKK</span></div>
+<div class="row clickable" onclick="showDetail('chatrium')"><span class="time">22:30+</span><span class="item">Grab → Chatrium Sathon Bangkok</span><span class="chev">›</span></div>
+<div class="row"><span class="time">深夜</span><span class="item">入住、洗澡、休息。今天不排活动。</span></div>
+</div></section>
+
+<section class="page" id="p3">
+<div class="dayhead"><b>Day 2 · 9/19 Sat</b><h1>第一次曼谷 · 寺庙经典线 🛕</h1></div>
+<div class="card">
+<div class="row clickable" onclick="showDetail('palace')"><span class="time">09:30</span><span class="item">Grand Palace 大皇宫</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('watpho')"><span class="time">11:45</span><span class="item">Wat Pho 卧佛寺</span><span class="chev">›</span></div>
+<div class="row"><span class="time">13:00</span><span class="item">午餐 / 咖啡休息</span></div>
+<div class="row clickable" onclick="showDetail('watarun')"><span class="time">15:00</span><span class="item">Wat Arun 郑王庙</span><span class="chev">›</span></div>
+<div class="row"><span class="time">晚上</span><span class="item">返回酒店附近，早点休息</span></div>
+</div></section>
+
+<section class="page" id="p4">
+<div class="dayhead"><b>Day 3 · 9/20 Sun</b><h1>周末市场 + 泰丝老宅 + 美食 🛍️</h1></div>
+<div class="card">
+<div class="row clickable" onclick="showDetail('chatuchak')"><span class="time">10:00</span><span class="item">Chatuchak Weekend Market</span><span class="chev">›</span></div>
+<div class="row"><span class="time">13:00</span><span class="item">午餐 / Cafe</span></div>
+<div class="row clickable" onclick="showDetail('jim')"><span class="time">15:00</span><span class="item">Jim Thompson House</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('banthat')"><span class="time">17:30</span><span class="item">Banthat Thong 美食街</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('panee')"><span class="time">晚餐</span><span class="item">Pa Nee Kung Chae Nam Pla</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('hereduan')"><span class="time">备选</span><span class="item">Here Duan</span><span class="chev">›</span></div>
+</div></section>
+
+<section class="page" id="p5">
+<div class="dayhead"><b>Day 4 · 9/21 Mon</b><h1>老城散步 + Chinatown 🏮</h1></div>
+<div class="card">
+<div class="row clickable" onclick="showDetail('talatnoi')"><span class="time">11:30</span><span class="item">Talat Noi / Charoen Krung</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('rivercity')"><span class="time">14:00</span><span class="item">River City Bangkok</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('chinatown')"><span class="time">17:00</span><span class="item">Yaowarat Chinatown</span><span class="chev">›</span></div>
+<div class="row"><span class="time">20:00</span><span class="item">回酒店休息</span></div>
+</div></section>
+
+<section class="page" id="p6">
+<div class="dayhead"><b>Day 5 · 9/22 Tue</b><h1>银饰手作 💍</h1></div>
+<div class="card">
+<div class="row clickable" onclick="showDetail('originag')"><span class="time">10:30</span><span class="item">OriginAg Jewelry x Workshop · 925 银饰</span><span class="chev">›</span></div>
+<div class="row"><span class="time">12:00</span><span class="item">四人一起午餐</span></div>
+<div class="row"><span class="time">下午</span><span class="item">不固定安排，按当天状态决定</span></div>
+<div class="row"><span class="time">晚上</span><span class="item">轻松晚餐，早点休息</span></div>
+</div></section>
+
+<section class="page" id="p7">
+<div class="dayhead"><b>Day 6 · 9/23 Wed</b><h1>Lead Climbing Day 🧗‍♀️</h1></div>
+<div class="card">
+<div class="row clickable" onclick="showDetail('rockdomain')"><span class="time">10:30</span><span class="item">Rock Domain · Lead Climbing</span><span class="chev">›</span></div>
+<div class="row"><span class="time">13:30</span><span class="item">午餐 / 洗澡 / 补水</span></div>
+<div class="row clickable" onclick="showDetail('massage')"><span class="time">16:00+</span><span class="item">放松型精油按摩 60–90 min</span><span class="chev">›</span></div>
+<div class="row"><span class="time">晚上</span><span class="item">清淡晚餐；前臂、肩膀避免重手深层按摩</span></div>
+</div></section>
+
+<section class="page" id="p8">
+<div class="dayhead"><b>Day 7 · 9/24 Thu</b><h1>Shooting Day 🎯</h1></div>
+<div class="card">
+<div class="row clickable" onclick="showDetail('shooting')"><span class="time">10:00</span><span class="item">Bangkok Shooting Range · 实弹体验</span><span class="chev">›</span></div>
+<div class="row"><span class="time">12:00</span><span class="item">午餐</span></div>
+<div class="row clickable" onclick="showDetail('massage')"><span class="time">下午</span><span class="item">SPA / 按摩 60–90 min</span><span class="chev">›</span></div>
+<div class="row clickable" onclick="showDetail('siam')"><span class="time">之后</span><span class="item">Siam / CentralWorld Shopping</span><span class="chev">›</span></div>
+<div class="row"><span class="time">晚上</span><span class="item">曼谷最后一顿正式晚餐</span></div>
+</div></section>
+
+<section class="page" id="p9">
+<div class="dayhead"><b>Day 8 · 9/25 Fri</b><h1>机场酒店 · 收尾日 🧳</h1></div>
+<div class="card">
+<div class="row"><span class="time">上午</span><span class="item">早餐 / 最后购物</span></div>
+<div class="row clickable" onclick="showDetail('chatrium')"><span class="time">12:00</span><span class="item">Chatrium Sathon Checkout</span><span class="chev">›</span></div>
+<div class="row"><span class="time">13:00</span><span class="item">Grab 前往 DMK 区域</span></div>
+<div class="row clickable" onclick="showDetail('amari')"><span class="time">15:00</span><span class="item">入住 Amari Don Muang Airport Bangkok</span><span class="chev">›</span></div>
+<div class="row"><span class="time">22:30</span><span class="item">睡觉，为回程留体力</span></div>
+</div></section>
+
+<section class="page" id="p10">
+<div class="dayhead"><b>Day 9 · 9/26 Sat</b><h1>回东京 ✈️</h1></div>
+<div class="card">
+<div class="row"><span class="time">07:00</span><span class="item">起床</span></div>
+<div class="row clickable" onclick="showDetail('amari')"><span class="time">07:45</span><span class="item">Amari Checkout</span><span class="chev">›</span></div>
+<div class="row"><span class="time">08:00</span><span class="item">经连廊步行前往 DMK，办理值机</span></div>
+<div class="row"><span class="time">11:15</span><span class="item">Thai AirAsia X XJ606 起飞</span></div>
+<div class="row"><span class="time">19:45</span><span class="item">抵达 Tokyo NRT</span></div>
+</div></section>
+
+<section class="page" id="p11">
+<div class="dayhead"><b>FREE CHOICE</b><h1>想去再去 ✨</h1></div>
+<div class="card"><p style="margin:0">这些项目不放进每日时间轴。当天有体力、有兴趣再选。点击卡片可看地址、建议时长和导航。</p></div>
+<div class="sectiontitle">体验类</div>
+<div class="card"><div class="grid">
+  <div class="freecard" onclick="showDetail('watchara')"><div class="emoji">🥊</div><b>泰拳体验</b><small>初学者也可以，建议提前确认英语课</small></div>
+  <div class="freecard" onclick="showDetail('cooking')"><div class="emoji">🍳</div><b>泰餐料理课</b><small>适合安排半天，不赶行程</small></div>
+  <div class="freecard" onclick="showDetail('thaiphoto')"><div class="emoji">👗</div><b>泰服写真</b><small>适合寺庙附近或工作室预约</small></div>
+  <div class="freecard" onclick="showDetail('muaymatch')"><div class="emoji">🥊</div><b>看职业泰拳</b><small>晚上有空再安排</small></div>
+</div></div>
+<div class="sectiontitle">放松 / 户外</div>
+<div class="card"><div class="grid">
+  <div class="freecard" onclick="showDetail('massage')"><div class="emoji">💆‍♀️</div><b>SPA / 按摩</b><small>60–120 分钟，随当天体力安排</small></div>
+  <div class="freecard" onclick="showDetail('bangkachao')"><div class="emoji">🚲</div><b>Bang Krachao</b><small>天气好再去，骑行半日</small></div>
+  <div class="freecard" onclick="showDetail('iconsiam')"><div class="emoji">🛍️</div><b>ICONSIAM</b><small>购物、吃饭、吹空调</small></div>
+  <div class="freecard" onclick="showDetail('rivercruise')"><div class="emoji">🌆</div><b>湄南河夜景</b><small>只想轻松看夜景时很好用</small></div>
+</div></div>
+</section>
+</main>
+
+<div class="bottom"><button class="prev" onclick="step(-1)">← 上一个</button><button class="next" onclick="step(1)">下一个 →</button></div>
+
+<div class="modal" id="modal" onclick="if(event.target===this)closeDetail()">
+  <div class="sheet">
+    <div class="handle"></div>
+    <div id="modalContent"></div>
+    <button class="close" onclick="closeDetail()">关闭</button>
+  </div>
+</div>
+
 <script>
-let cur=0, max=10;
-function go(n){cur=Math.max(0,Math.min(max,n));document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById('p'+cur).classList.add('active');scrollTo(0,0);localStorage.setItem('bangkokPage',cur)}
+let cur=0, max=11;
+
+const details={
+chatrium:{title:"Chatrium Sathon Bangkok",tags:["酒店","Day 1–8"],desc:"曼谷主要住宿。抵达当晚直接 Grab 前往。",address:"291 Soi Naradhiwas Rajanagarindra 24, New Sathon Road, Bangkok 10120, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Chatrium+Sathon+Bangkok"},
+palace:{title:"Grand Palace 大皇宫",tags:["景点","寺庙"],desc:"第一次曼谷必去。建议早到，天气更凉快、人也相对少。进入寺庙区域注意服装要求。",address:"Na Phra Lan Rd, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=The+Grand+Palace+Bangkok"},
+watpho:{title:"Wat Pho 卧佛寺",tags:["景点","寺庙"],desc:"大皇宫后步行衔接最顺。建议预留约 1–1.5 小时。",address:"2 Sanam Chai Rd, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Wat+Pho+Bangkok"},
+watarun:{title:"Wat Arun 郑王庙",tags:["景点","寺庙"],desc:"卧佛寺之后过河最方便。下午光线适合拍照，注意台阶较陡。",address:"158 Wang Doem Rd, Wat Arun, Bangkok Yai, Bangkok 10600, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Wat+Arun+Bangkok"},
+chatuchak:{title:"Chatuchak Weekend Market",tags:["市场","购物"],desc:"周末限定的大型市场。天气热，建议边逛边补水，不用硬逛完。",address:"Kamphaeng Phet 2 Rd, Chatuchak, Bangkok 10900, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Chatuchak+Weekend+Market"},
+jim:{title:"Jim Thompson House",tags:["文化","室内"],desc:"泰丝与传统建筑体验，适合下午避暑。",address:"6 Kasem San 2 Alley, Wang Mai, Pathum Wan, Bangkok 10330, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Jim+Thompson+House+Museum"},
+banthat:{title:"Banthat Thong 美食街",tags:["美食","夜间"],desc:"一整条街都适合边走边吃，安排 2–3 小时比较舒服。",address:"Banthat Thong Rd, Pathum Wan, Bangkok, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Banthat+Thong+Road+Bangkok"},
+panee:{title:"Pa Nee Kung Chae Nam Pla",tags:["餐厅","海鲜"],desc:"你们已经标记的 Banthat Thong 餐厅之一。",address:"36 Soi Chula 14, Wang Mai, Pathum Wan, Bangkok 10330, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Pa+Nee+Kung+Chae+Nam+Pla+Bangkok"},
+hereduan:{title:"Here Duan · Banthat Thong",tags:["餐厅","备选"],desc:"Banthat Thong 的另一家备选餐厅。",address:"1982-1984 Wang Mai, Pathum Wan, Bangkok, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Here+Duan+Banthat+Thong+Bangkok"},
+talatnoi:{title:"Talat Noi / Charoen Krung",tags:["街区","散步"],desc:"老城区散步路线，适合咖啡、小店、街拍，不必卡得太死。",address:"Talat Noi, Samphanthawong, Bangkok, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Talat+Noi+Bangkok"},
+rivercity:{title:"River City Bangkok",tags:["艺术","商场"],desc:"河边艺术与古董空间。OriginAg 也在这里，所以先熟悉一次路线很方便。",address:"23 Charoen Krung 24, Talat Noi, Samphanthawong, Bangkok 10100, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=River+City+Bangkok"},
+chinatown:{title:"Yaowarat Chinatown",tags:["美食","夜景"],desc:"建议傍晚开始逛，边走边吃，不需要固定一家店。",address:"Yaowarat Rd, Samphanthawong, Bangkok, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Yaowarat+Road+Bangkok"},
+originag:{title:"OriginAg Jewelry x Workshop",tags:["预约","银饰"],desc:"925 银饰手作。建议提前预约，周一休息。",address:"River City Bangkok, 1F Room 190, Soi Charoen Krung 24, Bangkok, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=OriginAg+Jewelry+River+City+Bangkok",website:"https://wearoriginag.com/book-appointment/"},
+rockdomain:{title:"Rock Domain Climbing Gym",tags:["预约","Lead Climbing"],desc:"你们的攀岩日。建议提前确认 Lead 区、保护服务 / belay 和装备租赁。",address:"1780 Debaratna Rd, Bangna-Tai, Bangna, Bangkok 10260, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Rock+Domain+Climbing+Gym",website:"https://www.rockdomaingym.com/"},
+shooting:{title:"Bangkok Shooting Range",tags:["预约","实弹体验"],desc:"使用正规射击场，按现场教练指示操作。建议携带护照。",address:"1019/3 Phahonyothin Rd, Phaya Thai, Bangkok 10400, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Bangkok+Shooting+Range+Phahonyothin"},
+siam:{title:"Siam / CentralWorld",tags:["购物","室内"],desc:"射击后按体力安排，适合购物、吃饭、休息。",address:"Pathum Wan, Bangkok, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Siam+CentralWorld+Bangkok"},
+amari:{title:"Amari Don Muang Airport Bangkok",tags:["机场酒店","Day 8–9"],desc:"与 DMK Terminal 1 有空调连廊相连，第二天早班机很省心。建议 9/25 入住。",address:"333 Moo 10 Chert Wudthakas Road, Si Kan, Don Muang, Bangkok 10210, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Amari+Don+Muang+Airport+Bangkok"},
+watchara:{title:"Watchara Muay Thai Gym",tags:["自由项目","泰拳"],desc:"想体验泰拳时再去。建议先联系确认初学者课程、英语沟通与预约方式。",address:"9 Sukhumvit 1 Alley, Khlong Toei Nuea, Watthana, Bangkok 10110, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Watchara+Muay+Thai+Gym+Bangkok"},
+massage:{title:"SPA / 泰式按摩",tags:["自由项目","放松"],desc:"不固定店、不固定日期。普通日可做 60–120 分钟；攀岩后优先轻柔精油或放松型，避免前臂和肩膀重手深层按压。",address:"按当天所在区域选择正规、高评分门店即可",maps:"https://www.google.com/maps/search/?api=1&query=Thai+massage+Bangkok"},
+cooking:{title:"泰餐料理课",tags:["自由项目","半日"],desc:"适合想慢下来的一天，通常包含市场或备料 + 烹饪。建议挑交通方便、英语授课的课程。",address:"建议按住宿区域选择课程",maps:"https://www.google.com/maps/search/?api=1&query=Thai+cooking+class+Bangkok"},
+thaiphoto:{title:"传统泰服写真",tags:["自由项目","拍照"],desc:"可选寺庙附近租泰服，或预约专业工作室。需要拍摄的话建议提早预约。",address:"建议按拍摄地点选择门店",maps:"https://www.google.com/maps/search/?api=1&query=Thai+costume+rental+Bangkok"},
+muaymatch:{title:"职业泰拳比赛",tags:["自由项目","夜间"],desc:"有兴趣再安排，不塞进固定行程。出发前按比赛日查询正规场馆赛程。",address:"Bangkok, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Muay+Thai+stadium+Bangkok"},
+bangkachao:{title:"Bang Krachao 骑行",tags:["自由项目","户外"],desc:"天气好、体力充足再去。适合半日骑行；如果下雨或很闷热就直接放弃。",address:"Bang Krachao, Phra Pradaeng District, Samut Prakan, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Bang+Krachao"},
+iconsiam:{title:"ICONSIAM",tags:["自由项目","购物"],desc:"非常适合临时空档：吃饭、购物、避暑、看河景。",address:"299 Charoen Nakhon Rd, Khlong Ton Sai, Khlong San, Bangkok 10600, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=ICONSIAM+Bangkok"},
+rivercruise:{title:"湄南河夜景",tags:["自由项目","夜景"],desc:"不一定要坐正式晚宴船。临时想看夜景时，搭船、河边餐厅或 ICONSIAM 都可以。",address:"Chao Phraya River, Bangkok, Thailand",maps:"https://www.google.com/maps/search/?api=1&query=Chao+Phraya+River+Bangkok"}
+};
+
+function go(n){
+  cur=Math.max(0,Math.min(max,n));
+  document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+  document.getElementById('p'+cur).classList.add('active');
+  scrollTo(0,0);
+  localStorage.setItem('bangkokPage',cur);
+}
 function step(d){let n=cur+d;if(n>max)n=0;if(n<0)n=max;go(n)}
+function showDetail(key){
+  const d=details[key]; if(!d)return;
+  const tags=(d.tags||[]).map(t=>'<span class="tag">'+t+'</span>').join('');
+  const site=d.website?'<a class="secondary" href="'+d.website+'" target="_blank">官网 / 预约</a>':'';
+  document.getElementById('modalContent').innerHTML=
+    '<h2>'+d.title+'</h2><div>'+tags+'</div>'+
+    '<div class="detailbox"><b>项目说明</b>'+d.desc+'</div>'+
+    '<div class="detailbox"><b>地址</b>'+d.address+'</div>'+
+    '<div class="actionrow"><a href="'+d.maps+'" target="_blank">Google Maps 导航</a>'+site+'</div>'+
+    '<div class="notice">营业时间、票价、预约规则可能变化，出发前建议再确认一次。</div>';
+  document.getElementById('modal').classList.add('show');
+}
+function closeDetail(){document.getElementById('modal').classList.remove('show')}
+
 const boxes=[...document.querySelectorAll('#checks input')];
-function save(){let a=boxes.map(x=>x.checked);localStorage.setItem('bangkokChecks',JSON.stringify(a));let done=a.filter(Boolean).length,p=Math.round(done/a.length*100);document.getElementById('bar').style.width=p+'%';document.getElementById('pct').textContent=done+' / '+a.length+' · '+p+'% completed'}
-try{let a=JSON.parse(localStorage.getItem('bangkokChecks')||'[]');boxes.forEach((x,i)=>x.checked=!!a[i]);let saved=+localStorage.getItem('bangkokPage');if(Number.isFinite(saved))cur=saved}catch(e){}
-boxes.forEach(x=>x.addEventListener('change',save));save();go(cur);
-</script></body></html>
+function save(){
+  let a=boxes.map(x=>x.checked);
+  localStorage.setItem('bangkokChecks',JSON.stringify(a));
+  let done=a.filter(Boolean).length,p=Math.round(done/a.length*100);
+  document.getElementById('bar').style.width=p+'%';
+  document.getElementById('pct').textContent=done+' / '+a.length+' · '+p+'% completed';
+}
+try{
+  let a=JSON.parse(localStorage.getItem('bangkokChecks')||'[]');
+  boxes.forEach((x,i)=>x.checked=!!a[i]);
+  let saved=+localStorage.getItem('bangkokPage');
+  if(Number.isFinite(saved))cur=saved;
+}catch(e){}
+boxes.forEach(x=>x.addEventListener('change',save));
+save();go(cur);
+</script>
+</body>
+</html>
