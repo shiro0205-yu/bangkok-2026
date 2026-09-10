@@ -1,0 +1,79 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#153f3d"><title>Bangkok Girls Trip 2026</title>
+<style>
+:root{--ink:#173737;--green:#174c49;--gold:#c79b54;--cream:#fbf6eb;--coral:#db7c69}
+*{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",sans-serif;background:var(--cream);color:var(--ink)}
+main{max-width:520px;margin:auto;min-height:100vh;padding-bottom:90px} .page{display:none}.page.active{display:block}
+.hero{padding:58px 24px 30px;background:linear-gradient(145deg,#123b3a,#28736b);color:white;border-radius:0 0 34px 34px}
+.hero small{letter-spacing:2px;color:#efd6a6}.hero h1{font-size:42px;line-height:.98;margin:12px 0}.hero p{opacity:.9}
+.card{background:white;margin:16px;border-radius:22px;padding:18px;box-shadow:0 8px 28px #17373712}
+.pill{display:inline-block;background:#f2e6cf;color:#795b2d;border-radius:999px;padding:6px 10px;font-size:12px;margin:3px}
+.btn{display:block;width:100%;border:0;border-radius:16px;padding:15px;margin-top:12px;background:var(--green);color:white;font-weight:700;font-size:16px;text-align:center}
+.btn.alt{background:#efe5d2;color:var(--ink)} h2{margin:4px 0 12px}
+.row{display:flex;gap:8px;padding:13px 0;border-bottom:1px solid #eee;line-height:1.45}.row:last-child{border-bottom:0}
+.time{font-weight:700;color:var(--coral);flex:0 0 72px} .dayhead{padding:34px 20px 4px}.dayhead b{color:var(--coral)}.dayhead h1{margin:7px 0}
+.check{display:flex;gap:10px;padding:11px 0;border-bottom:1px solid #eee;align-items:flex-start}.check input{width:20px;height:20px;flex:none}
+.progress{height:7px;background:#eee;border-radius:9px;overflow:hidden;margin:16px 0 8px}.progress i{display:block;height:100%;background:var(--gold);width:0}
+.info{font-size:13px;background:#fff5e5;border-radius:14px;padding:12px;line-height:1.55;margin-top:12px}
+.bottom{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(10px);border-top:1px solid #ddd;padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;gap:8px;justify-content:center}
+.bottom button{max-width:245px;flex:1;padding:13px;border:0;border-radius:14px;font-weight:700;font-size:14px}.prev{background:#eee;color:var(--ink)}.next{background:var(--green);color:#fff}
+a{color:#17645f;font-weight:650} .mini{font-size:13px;color:#60706f}
+</style></head><body><main>
+<section class="page active" id="p0"><div class="hero"><small>GIRLS TRIP · BANGKOK</small><h1>Bangkok<br>2026</h1><p>SEP 18 — 26 · 4人旅行</p>
+<span class="pill">经典景点</span><span class="pill">美食</span><span class="pill">银饰</span><span class="pill">攀岩</span><span class="pill">射击</span><span class="pill">SPA</span></div>
+<div class="card"><h2>สวัสดี Bangkok 👋</h2><p>前半段第一次曼谷经典路线，后半段体验、运动、按摩和自由活动。旅行当天跟着“下一项”走就好。</p>
+<button class="btn" onclick="go(1)">开始旅行准备 →</button><button class="btn alt" onclick="go(2)">直接看 Day 1</button></div>
+<div class="card"><b>✈️ 去程</b><div class="row"><span class="time">9/18</span><span>ZIPAIR ZG51<br>NRT 17:00 → BKK 21:40</span></div>
+<b>✈️ 回程</b><div class="row"><span class="time">9/26</span><span>Thai AirAsia X XJ606<br>DMK 11:15 → NRT 19:45</span></div></div></section>
+<section class="page" id="p1"><div class="dayhead"><b>BEFORE WE GO</b><h1>☑️ 出发 Checklist</h1></div><div class="card" id="checks">
+<label class="check"><input type="checkbox">护照有效期确认</label>
+<label class="check"><input type="checkbox">9/16–17 完成 Thailand Digital Arrival Card</label>
+<label class="check"><input type="checkbox">保存 ZG51 / XJ606 机票与改签邮件</label>
+<label class="check"><input type="checkbox">确认 Chatrium Sathon 住宿订单</label>
+<label class="check"><input type="checkbox">预订 9/25 DMK 机场酒店</label>
+<label class="check"><input type="checkbox">预约 9/22 OriginAg 银饰 Workshop</label>
+<label class="check"><input type="checkbox">预约 9/23 Rock Domain Lead Climbing / belay / gear</label>
+<label class="check"><input type="checkbox">预约 9/24 Bangkok Shooting Range</label>
+<label class="check"><input type="checkbox">准备 eSIM / SIM、Grab、银行卡与现金</label>
+<label class="check"><input type="checkbox">寺庙服装、防晒、雨具、运动服、充电宝</label>
+<div class="progress"><i id="bar"></i></div><small id="pct">0% completed</small>
+<div class="info">TDAC：<a href="https://tdac.immigration.go.th/" target="_blank">官方填写页面 ↗</a><br>建议出发前再次确认泰国入境政策。</div></div></section>
+<section class="page" id="p2">
+      <div class="dayhead"><b>Day 1 · 9/18 Fri</b><h1>抵达曼谷 ✈️</h1></div>
+      <div class="card"><div class="row"><span class="time">17:00</span><span>ZIPAIR ZG51 从成田 NRT 出发</span></div><div class="row"><span class="time">21:40</span><span>抵达 Bangkok BKK</span></div><div class="row"><span class="time">22:30+</span><span>入境、取行李 → Grab 前往 Chatrium Sathon</span></div><div class="row"><span class="time">深夜</span><span>入住、洗澡、休息。今天不排活动。</span></div></div>
+    </section><section class="page" id="p3">
+      <div class="dayhead"><b>Day 2 · 9/19 Sat</b><h1>第一次曼谷 · 寺庙经典线 🛕</h1></div>
+      <div class="card"><div class="row"><span class="time">09:30</span><span>Grand Palace 大皇宫</span></div><div class="row"><span class="time">11:45</span><span>Wat Pho 卧佛寺</span></div><div class="row"><span class="time">13:00</span><span>午餐 / 咖啡休息</span></div><div class="row"><span class="time">15:00</span><span>Wat Arun 郑王庙</span></div><div class="row"><span class="time">17:00</span><span>湄南河 / ICONSIAM（看体力）</span></div><div class="row"><span class="time">晚上</span><span>足部或精油按摩 60 min</span></div></div>
+    </section><section class="page" id="p4">
+      <div class="dayhead"><b>Day 3 · 9/20 Sun</b><h1>周末市场 + 泰丝老宅 + 美食 🛍️</h1></div>
+      <div class="card"><div class="row"><span class="time">10:00</span><span>Chatuchak Weekend Market</span></div><div class="row"><span class="time">13:00</span><span>午餐 / Cafe</span></div><div class="row"><span class="time">15:00</span><span>Jim Thompson House</span></div><div class="row"><span class="time">17:30</span><span>Banthat Thong 美食街</span></div><div class="row"><span class="time">晚餐</span><span>Pa Nee Kung Chae Nam Pla / Here Duan</span></div><div class="row"><span class="time">晚上</span><span>可选足部按摩</span></div></div>
+    </section><section class="page" id="p5">
+      <div class="dayhead"><b>Day 4 · 9/21 Mon</b><h1>老城散步 + Chinatown 🏮</h1></div>
+      <div class="card"><div class="row"><span class="time">11:30</span><span>Talat Noi / Charoen Krung</span></div><div class="row"><span class="time">14:00</span><span>River City Bangkok</span></div><div class="row"><span class="time">17:00</span><span>Yaowarat Chinatown</span></div><div class="row"><span class="time">20:00</span><span>按摩 / SPA 60–90 min</span></div></div>
+    </section><section class="page" id="p6">
+      <div class="dayhead"><b>Day 5 · 9/22 Tue</b><h1>银饰手作 + 自由日 💍</h1></div>
+      <div class="card"><div class="row"><span class="time">10:30</span><span>OriginAg Jewelry x Workshop · 925 银饰</span></div><div class="row"><span class="time">12:00</span><span>四人一起午餐</span></div><div class="row"><span class="time">下午</span><span>自由活动：SPA / Cafe / Shopping / 拍照</span></div><div class="row"><span class="time">晚上</span><span>轻松晚餐，早点休息</span></div></div>
+    </section><section class="page" id="p7">
+      <div class="dayhead"><b>Day 6 · 9/23 Wed</b><h1>Lead Climbing Day 🧗‍♀️</h1></div>
+      <div class="card"><div class="row"><span class="time">10:30</span><span>Rock Domain · Lead Climbing</span></div><div class="row"><span class="time">13:30</span><span>午餐 / 洗澡 / 补水</span></div><div class="row"><span class="time">16:00+</span><span>放松型精油按摩 60–90 min</span></div><div class="row"><span class="time">晚上</span><span>清淡晚餐；前臂肩膀避免重手深层按摩</span></div></div>
+    </section><section class="page" id="p8">
+      <div class="dayhead"><b>Day 7 · 9/24 Thu</b><h1>Shooting Day 🎯</h1></div>
+      <div class="card"><div class="row"><span class="time">10:00</span><span>Bangkok Shooting Range · 实弹体验</span></div><div class="row"><span class="time">12:00</span><span>午餐</span></div><div class="row"><span class="time">下午</span><span>SPA / 按摩 60–90 min</span></div><div class="row"><span class="time">之后</span><span>Siam / CentralWorld / ICONSIAM Shopping</span></div><div class="row"><span class="time">晚上</span><span>曼谷最后一顿正式晚餐</span></div></div>
+    </section><section class="page" id="p9">
+      <div class="dayhead"><b>Day 8 · 9/25 Fri</b><h1>机场酒店 · 收尾日 🧳</h1></div>
+      <div class="card"><div class="row"><span class="time">上午</span><span>早餐 / 最后购物</span></div><div class="row"><span class="time">12:00</span><span>Chatrium Sathon Checkout</span></div><div class="row"><span class="time">13:00</span><span>Grab 前往 DMK 区域</span></div><div class="row"><span class="time">15:00</span><span>建议入住 Amari Don Muang Airport Bangkok</span></div><div class="row"><span class="time">下午</span><span>休息 / 可选最后一次 SPA 90–120 min</span></div><div class="row"><span class="time">22:30</span><span>睡觉，为回程留体力</span></div></div>
+    </section><section class="page" id="p10">
+      <div class="dayhead"><b>Day 9 · 9/26 Sat</b><h1>回东京 ✈️</h1></div>
+      <div class="card"><div class="row"><span class="time">07:00</span><span>起床</span></div><div class="row"><span class="time">07:45</span><span>Checkout</span></div><div class="row"><span class="time">08:00</span><span>经连廊前往 DMK，办理值机</span></div><div class="row"><span class="time">11:15</span><span>Thai AirAsia X XJ606 起飞</span></div><div class="row"><span class="time">19:45</span><span>抵达 Tokyo NRT</span></div></div>
+    </section>
+</main><div class="bottom"><button class="prev" onclick="step(-1)">← 上一个</button><button class="next" onclick="step(1)">下一个 →</button></div>
+<script>
+let cur=0, max=10;
+function go(n){cur=Math.max(0,Math.min(max,n));document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById('p'+cur).classList.add('active');scrollTo(0,0);localStorage.setItem('bangkokPage',cur)}
+function step(d){let n=cur+d;if(n>max)n=0;if(n<0)n=max;go(n)}
+const boxes=[...document.querySelectorAll('#checks input')];
+function save(){let a=boxes.map(x=>x.checked);localStorage.setItem('bangkokChecks',JSON.stringify(a));let done=a.filter(Boolean).length,p=Math.round(done/a.length*100);document.getElementById('bar').style.width=p+'%';document.getElementById('pct').textContent=done+' / '+a.length+' · '+p+'% completed'}
+try{let a=JSON.parse(localStorage.getItem('bangkokChecks')||'[]');boxes.forEach((x,i)=>x.checked=!!a[i]);let saved=+localStorage.getItem('bangkokPage');if(Number.isFinite(saved))cur=saved}catch(e){}
+boxes.forEach(x=>x.addEventListener('change',save));save();go(cur);
+</script></body></html>
